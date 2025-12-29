@@ -11,11 +11,11 @@ from streamlit_option_menu import option_menu
 
 # loading the saved models
 
-diabetes_model = pickle.load(open('C:/Users/anshr/Downloads/MachineLearning/diabetes_trained_model.sav', 'rb'))
+diabetes_model = pickle.load(open('diabetes_trained_model.sav', 'rb'))
 
-heart_disease_model = pickle.load(open('C:/Users/anshr/Downloads/MachineLearning/heart_disease_model.sav','rb'))
+heart_disease_model = pickle.load(open('heart_disease_model.sav','rb'))
 
-parkinsons_model = pickle.load(open('C:/Users/anshr/Downloads/MachineLearning/parkinsons_model.sav', 'rb'))
+parkinsons_model = pickle.load(open('parkinsons_model.sav', 'rb'))
 
 
 
@@ -240,4 +240,5 @@ if (selected == "Parkinsons Prediction"):
         else:
           parkinsons_diagnosis = "The person does not have Parkinson's disease"
         
+
     st.success(parkinsons_diagnosis)
